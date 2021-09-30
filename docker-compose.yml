@@ -15,8 +15,8 @@ services:
             - nodejs.dev
         volumes:
             - "${PWD}:/src"
-        #ports:
-            #- "3000:3000"
+        ports:
+            - "8016:8016"
 networks:
     nodejs.dev:
         driver: bridge
