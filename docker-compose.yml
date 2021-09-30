@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+    nodejs.dev:
+        container_name: nodejs.dev
+        image: nodejs.dev
+        build:
+            context: .
+            target: nodejs_dev
+        environment:
+            user: $user
+            group: $group
+        command: /src/entrypoint.sh
+        networks:
+            - nodejs.dev
+        volumes:
+            - "${PWD}:/src"
+        #ports:
+            #- "3000:3000"
+networks:
+    nodejs.dev:
+        driver: bridge

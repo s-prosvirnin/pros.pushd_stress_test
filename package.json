@@ -1,0 +1,14 @@
+{
+    "name": "pushd_stress_test",
+    "version": "1.0.0",
+    "license": "MIT",
+    "main": "app.js",
+    "keywords": [
+        "nodejs",
+        "bootstrap",
+        "express"
+    ],
+    "dependencies": {
+        "ws": "8.2.2"
+    }
+}
